@@ -44,13 +44,17 @@
 	--hard ワークツリーとインデックスを破棄して指定コミットの状態にする<br>
 	<h2>status</h2>
 	ワーキングツリーの状態を表示する<br>
-	git status [<options>..] [--] [<pathspec>...]<br>
+	git status [&ltoptions&gt..] [--] [&ltpathspec&gt...]<br>
 	<br>
 	--short 簡易表記で表示<br>
 	--branch ブランチとトラック情報を簡易表記で表示<br>
 	--porcelain スクリプトとかでパースしやすい形式で表示<br>
-	--untracked-files 未トラックのファイルも表示<br>
-	--ignore-submodules サブモジュールの変更を表示しない<br>
+	--untracked-files[=mode] 未トラックのファイルも表示<br>
+	&nbsp;&nbsp;modeの説明<br>
+	&nbsp;&nbsp;no 未トラックファイルを表示しない<br>
+	&nbsp;&nbsp;normal 未トラックファイルとディレクトリーを表示<br>
+	&nbsp;&nbsp;all 未トラックフォルダーの不可視ファイルを表示<br>	
+	--ignore-submodules[=when] サブモジュールの変更を表示しない<br>
 	--ignored 無視ファイルも表示<br>
 	-z 改行をLF(0x0a)ではなくNUL(0x00)で表示する
 
