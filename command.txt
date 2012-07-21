@@ -11,7 +11,7 @@ init Daiki Hara
 log @noboruhi
 merge Daiki Hara
 mv
-pull
+pull @ebc_2in2crc
 push
 rebase
 reset @ebc_2in2crc
