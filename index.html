@@ -14,25 +14,49 @@
 	ブランチの作成。 &lt;branchname&gt;は作成するブランチ名<br/>
 	作成されたブランチは、現在作業中のブランチのHEADがコピーされる。
 	
-	<h2>init</h2>
+	<h2> gti checkouot   </h2>
+	[-b]新しいブランチを切って作ったブランチに移動する
 	
+	<h2>init</h2>
+	git-init - 空Gitリポジトリを作成 または 既存のものを再初期化します<br/>
+	git init [-q | --quiet] [--bare] [--template=<template_directory>] [--separate-git-dir <git dir>] [--shared[=<permissions>]] [directory]<br/>
+	-q, --quiet 警告とエラーのみを表示します．他のメッセージは破棄します．<br/>
+	<br/>
+	--bare<br/>
+	ベアリポジトリを作成します．<br/>
+	ベアリポジトリは作業コピーを持たないリポジトリで，作業を中継するリポジトリとして使用します．<br/>
+	<br/>
+	--template=<template_directory><br/>
+	テンプレートディレクトリを設定します<br/>
+	init時に任意のフックスクリプトをコピーしたい場合に使用します<br/>
+	<br/>
+	--separate-git-dir=<git dir><br/>
+	任意のディレクトリにリポジトリを設定します<br/>
+	リポジトリとワークツリーを分けたいときに使用します<br/>
+
+	--shared[=(false|true|umask|group|all|world|everybody|0xxx)]
+	複数ユーザーでリポジトリを共有する際のアクセス権を設定します．
+
 	<h2>reset</h2>
 	ワークツリーやインデックスを指定コミットの状態にする<br>
-	git reset [--soft | --mixed | --hard] [&lt;commit&gt;]<br>
+	git reset [--soft | --mixed | --hard] [<commit>]<br>
 	<br>
 	--soft コミットだけ取り消す<br>
 	--mixed インデックスの変更を取り消す<br>
 	--hard ワークツリーとインデックスを破棄して指定コミットの状態にする<br>
-
 	<h2>status</h2>
 	ワーキングツリーの状態を表示する<br>
-	git status [<options>..] [--] [<pathspec>...]<br>
+	git status [&ltoptions&gt..] [--] [&ltpathspec&gt...]<br>
 	<br>
 	--short 簡易表記で表示<br>
 	--branch ブランチとトラック情報を簡易表記で表示<br>
 	--porcelain スクリプトとかでパースしやすい形式で表示<br>
-	--untracked-files 未トラックのファイルも表示<br>
-	--ignore-submodules サブモジュールの変更を表示しない<br>
+	--untracked-files[=mode] 未トラックのファイルも表示<br>
+	&nbsp;&nbsp;modeの説明<br>
+	&nbsp;&nbsp;no 未トラックファイルを表示しない<br>
+	&nbsp;&nbsp;normal 未トラックファイルとディレクトリーを表示<br>
+	&nbsp;&nbsp;all 未トラックフォルダーの不可視ファイルを表示<br>	
+	--ignore-submodules[=when] サブモジュールの変更を表示しない<br>
 	--ignored 無視ファイルも表示<br>
 	-z 改行をLF(0x0a)ではなくNUL(0x00)で表示する
 
@@ -53,5 +77,21 @@
 	-n / --line-number : マッチしたファイル名の後ろにマッチした行数を表示します<br>
 	-l / --files-with-matches / --name-only : マッチしたファイルのファイル名だけを表示します<br>
 	-L / --files-without-match : マッチしなかったファイル名だけを表示します<br>
+
+	<h2>tag</h2>
+	タグを作成、一覧表示、削除、検証する<br>
+	git tag -d &lt;tagname&gt;<br>
+	git tag [-a | -s | -u &lt;key-id&gt;] [-f] [-m &lt;msg&gt; | -F &lt;file&gt;]<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;tagname&gt; [&lt;commit&gt; | &lt;object&gt;]<br>
+	git tag -d &lt;tagname&gt;...<br>
+	git tag [-n[&lt;num&gt;]] -l [--contains &lt;commit&gt;] [--points-at &lt;object&gt;]<br>
+	&nbsp;&nbsp;&nbsp;[&lt;pattern&gt;...]<br>
+	git tag -v &lt;tagname&gt;...<br>
+	<br>
+	git tag &lt;タグ名&gt; タグを付ける<br>
+	git tag &lt;タグ名&gt; 指定コミットにタグを付ける<br>
+	git tag -l タグを一覧する<br>
+	git tag -d &lt;タグ名&gt; タグを削除する<br>
+	git tag -v &lt;タグ名&gt; 署名付きのタグを検証する (ry<br>
 </body>
 </html>
