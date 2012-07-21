@@ -110,5 +110,16 @@
 	git tag -l タグを一覧する<br>
 	git tag -d &lt;タグ名&gt; タグを削除する<br>
 	git tag -v &lt;タグ名&gt; 署名付きのタグを検証する (ry<br>
+
+	<h2>merge</h2>
+	他のブランチの変更内容をマージする<br/>
+	git merge [-n] [--stat] [--no-commit] [--squash] [-s <strategy>] [-X <strategy-option>]<br/>
+	[--[no-]rerere-autoupdate] [-m <msg>] [<commit>...]<br/>
+	git merge <msg> HEAD <commit>...<br/>
+	git merge --abort<br/>
+	--no-commit マージしたコミットを自動的にコミットしません.<br/>
+	--ff マージするブランチ間がFast-Forwardの関係の場合，コミットを作成しません.<br/>
+	--no-ff マージするブランチ間がFast-Forwardの関係の場合でもコミットを作成します<br/> 
+	--squash マージコミットを作成せず，インデックスとワークフローのみ更新します．<br/>
 </body>
 </html>
