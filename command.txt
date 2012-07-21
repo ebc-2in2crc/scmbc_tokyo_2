@@ -2,7 +2,7 @@
 bisect
 branch morooka
 checkout
-clone
+clone morooka
 commit
 diff tri_man
 fetch
