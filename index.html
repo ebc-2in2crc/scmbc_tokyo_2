@@ -12,11 +12,29 @@
 	git branch &lt;branchname&gt;<br/>
 	branchの作成。 &lt;branchname&gt;は作成するbranch名<br/>
 	
-	<h2>init</h2>
-	
 	<h2> gti checkouot   </h2>
 	[-b]新しいブランチを切って作ったブランチに移動する
 	
+	<h2>init</h2>
+	git-init - 空Gitリポジトリを作成 または 既存のものを再初期化します<br/>
+	git init [-q | --quiet] [--bare] [--template=<template_directory>] [--separate-git-dir <git dir>] [--shared[=<permissions>]] [directory]<br/>
+	-q, --quiet 警告とエラーのみを表示します．他のメッセージは破棄します．<br/>
+	<br/>
+	--bare<br/>
+	ベアリポジトリを作成します．<br/>
+	ベアリポジトリは作業コピーを持たないリポジトリで，作業を中継するリポジトリとして使用します．<br/>
+	<br/>
+	--template=<template_directory><br/>
+	テンプレートディレクトリを設定します<br/>
+	init時に任意のフックスクリプトをコピーしたい場合に使用します<br/>
+	<br/>
+	--separate-git-dir=<git dir><br/>
+	任意のディレクトリにリポジトリを設定します<br/>
+	リポジトリとワークツリーを分けたいときに使用します<br/>
+
+	--shared[=(false|true|umask|group|all|world|everybody|0xxx)]
+	複数ユーザーでリポジトリを共有する際のアクセス権を設定します．
+
 	<h2>reset</h2>
 	ワークツリーやインデックスを指定コミットの状態にする<br>
 	git reset [--soft | --mixed | --hard] [<commit>]<br>
