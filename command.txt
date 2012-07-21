@@ -9,7 +9,7 @@ fetch
 grep @noboruhi
 init Daiki Hara
 log @noboruhi
-merge
+merge Daiki Hara
 mv
 pull
 push
