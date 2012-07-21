@@ -1,20 +1,20 @@
 add
 bisect
-branch
+branch morooka
 checkout
 clone
 commit
 diff
 fetch
 grep
-init
+init Daiki Hara
 log
 merge
 mv
 pull
 push
 rebase
-reset
+reset @ebc_2in2crc
 rm
 show
 status tri_man
