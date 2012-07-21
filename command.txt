@@ -1,7 +1,7 @@
 ﻿add
 bisect
 branch morooka
-checkout
+checkout Takeshi
 clone
 commit
 diff tri_man
@@ -10,7 +10,7 @@ grep @noboruhi
 init Daiki Hara
 log @noboruhi
 merge
-mv
+mv inomata
 pull
 push
 rebase
