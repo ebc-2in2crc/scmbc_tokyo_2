@@ -14,7 +14,7 @@ mv
 pull
 push
 rebase
-reset
+reset @ebc_2in2crc
 rm
 show
 status
