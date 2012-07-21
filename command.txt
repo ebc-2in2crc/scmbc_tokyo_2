@@ -1,4 +1,4 @@
-add
+﻿add
 bisect
 branch
 checkout
@@ -6,7 +6,7 @@ clone
 commit
 diff
 fetch
-grep
+grep noborui
 init
 log
 merge
