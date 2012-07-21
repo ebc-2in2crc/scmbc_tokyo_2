@@ -2,20 +2,22 @@
 bisect
 branch morooka
 checkout Takeshi
-clone
+clone morooka
 commit
 diff tri_man
 fetch
 grep @noboruhi
 init Daiki Hara
 log @noboruhi
+merge Daiki Hara
+mv
+pull @ebc_2in2crc
 merge
-mv inomata
 pull
 push
 rebase
 reset @ebc_2in2crc
-rm
+rm Takeshi
 show
 status tri_man
 tag @ebc_2in2crc
