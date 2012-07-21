@@ -51,5 +51,21 @@
 	-n / --line-number : マッチしたファイル名の後ろにマッチした行数を表示します<br>
 	-l / --files-with-matches / --name-only : マッチしたファイルのファイル名だけを表示します<br>
 	-L / --files-without-match : マッチしなかったファイル名だけを表示します<br>
+
+	<h2>tag</h2>
+	タグを作成、一覧表示、削除、検証する<br>
+	git tag -d &lt;tagname&gt;<br>
+	git tag [-a | -s | -u &lt;key-id&gt;] [-f] [-m &lt;msg&gt; | -F &lt;file&gt;]<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;tagname&gt; [&lt;commit&gt; | &lt;object&gt;]<br>
+	git tag -d &lt;tagname&gt;...<br>
+	git tag [-n[&lt;num&gt;]] -l [--contains &lt;commit&gt;] [--points-at &lt;object&gt;]<br>
+	&nbsp;&nbsp;&nbsp;[&lt;pattern&gt;...]<br>
+	git tag -v &lt;tagname&gt;...<br>
+	<br>
+	git tag &lt;タグ名&gt; タグを付ける<br>
+	git tag &lt;タグ名&gt; 指定コミットにタグを付ける<br>
+	git tag -l タグを一覧する<br>
+	git tag -d &lt;タグ名&gt; タグを削除する<br>
+	git tag -v &lt;タグ名&gt; 署名付きのタグを検証する (ry<br>
 </body>
 </html>
