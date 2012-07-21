@@ -77,6 +77,13 @@
 	--ignored 無視ファイルも表示<br>
 	-z 改行をLF(0x0a)ではなくNUL(0x00)で表示する
 
+	<h2>diff</h2>
+	コミット同士や、コミットとワーキングツリーなどの差分を表示する
+	git diff [options] [&ltcommit&gt] [--] [&ltpath&gt...]
+	git diff [options] --chached [&ltcommit&gt] [--] [&ltpath&gt...]
+	git diff [options] &ltcommit&gt &ltcommit&gt [--] [&ltpath&gt...]
+	git diff [options] [--no-index] [--] &ltpath&gt &ltpath&gt
+
 	<h2>grep</h2>
 	リポジトリに対して特定の語句が含まれているファイルを検索する<br>
 	git grep [&ltoptions&gt] [&ltkeyword&gt]<br>
