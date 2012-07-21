@@ -8,7 +8,7 @@ diff
 fetch
 grep @noboruhi
 init Daiki Hara
-log
+log @noboruhi
 merge
 mv
 pull
@@ -18,4 +18,4 @@ reset @ebc_2in2crc
 rm
 show
 status tri_man
-tag
+tag @ebc_2in2crc
