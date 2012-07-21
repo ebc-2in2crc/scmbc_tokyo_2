@@ -17,5 +17,5 @@ rebase
 reset
 rm
 show
-status
+status tri_man
 tag
