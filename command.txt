@@ -4,7 +4,7 @@ branch morooka
 checkout
 clone
 commit
-diff
+diff tri_man
 fetch
 grep @noboruhi
 init Daiki Hara
