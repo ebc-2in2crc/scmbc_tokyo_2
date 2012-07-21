@@ -11,12 +11,17 @@
 	git branch (-a|--all)<br/>
 	ブランチ一覧を取得します。<br/>
 	ブランチ名の先頭に「*」が表示されているブランチが、現在作業中のブランチとなる。<br/>
-	git branch --list<br/>
+	git branch --list &lt;pattern&gt;<br/>
 	ブランチの一覧を取得します。<br/>
-	上の２つとの違い、リモートに存在するブランチも一覧として取得されます。<br/>
-	git branch &lt;branchname&gt;<br/>
+	上の２つとの違い、リモートで追跡しているブランチも一覧として取得されます。<br/>
+	また、[pattern]で指定したパターンにマッチするブランチする一覧を表示できます。<br/>
+	git branch (-r|--remote)<br/>
+	リモートで追跡しているブランチの一覧を取得します。<br/>
+	ローカルのブランチは表示されません。<br/>
+	git branch &lt;branchname&gt; &lt;start-point&gt;<br/>
 	ブランチの作成。 &lt;branchname&gt;は作成するブランチ名<br/>
-	作成されたブランチは、現在作業中のブランチのHEADがコピーされる。<br/>
+	作成されたブランチは、現在作業中のブランチのHEADがコピーされます。<br/>
+	また、[start-option]を指定した場合は、指定したコミットを起点としたブランチが作成されます<br/>
 	git branch (-d|-D) &lt;branchname&gt;<br/>
 	ローカル上のブランチを削除します。<br/>
 	リモートのブランチを削除するには git push :branchname として<br/>
