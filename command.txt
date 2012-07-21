@@ -7,7 +7,7 @@ commit
 diff
 fetch
 grep
-init
+init Daiki Hara
 log
 merge
 mv
