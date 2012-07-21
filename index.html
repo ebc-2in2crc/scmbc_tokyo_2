@@ -13,10 +13,54 @@
 	branchの作成。 &lt;branchname&gt;は作成するbranch名<br/>
 	
 	<h2>init</h2>
-		<h3>概要</h3>
-			<p>git-init - 空Gitリポジトリを作成 または 既存のものを再初期化します</p>
-	<h3>構文</h3>
-	<p>git init [-q | --quiet] [--bare] [--template=<template_directory>] [--separate-git-dir <git dir>] [--shared[=<permissions>]] [directory]</p>
+	git-init - 空Gitリポジトリを作成 または 既存のものを再初期化します<br/>
+	git init [-q | --quiet] [--bare] [--template=<template_directory>] [--separate-git-dir <git dir>] [--shared[=<permissions>]] [directory]</br>
+	-q, --quiet 警告とエラーのみを表示します．他のメッセージは破棄します．
+
+	--bare
+	Create a bare repository. If GIT_DIR environment is not set, it is set to the current working
+	directory.
+
+	--template=<template_directory>
+	Specify the directory from which templates will be used. (See the "TEMPLATE DIRECTORY" section
+	below.)
+
+	--separate-git-dir=<git dir>
+	Instead of initializing the repository where it is supposed to be, place a filesytem-agnostic git
+	symbolic link there, pointing to the specified git path, and initialize a git repository at the
+	path. The result is git repository can be separated from working tree. If this is
+	reinitialization, the repository will be moved to the specified path.
+
+	--shared[=(false|true|umask|group|all|world|everybody|0xxx)]
+	Specify that the git repository is to be shared amongst several users. This allows users
+	belonging to the same group to push into that repository. When specified, the config variable
+	"core.sharedRepository" is set so that files and directories under $GIT_DIR are created with the
+	requested permissions. When not specified, git will use permissions reported by umask(2).
+
+	The option can have the following values, defaulting to group if no value is given:
+
+	・    umask (or false): Use permissions reported by umask(2). The default, when --shared is not
+	specified.
+
+	・    group (or true): Make the repository group-writable, (and g+sx, since the git group may be not
+	the primary group of all users). This is used to loosen the permissions of an otherwise safe
+	umask(2) value. Note that the umask still applies to the other permission bits (e.g. if umask is
+	0022, using group will not remove read privileges from other (non-group) users). See 0xxx for how
+	to exactly specify the repository permissions.
+
+	・    all (or world or everybody): Same as group, but make the repository readable by all users.
+
+	・    0xxx: 0xxx is an octal number and each file will have mode 0xxx.  0xxx will override users'
+	umask(2) value (and not only loosen permissions as group and all does).  0640 will create a
+	repository which is group-readable, but not group-writable or accessible to others.  0660 will
+	create a repo that is readable and writable to the current user and group, but inaccessible to
+	others.
+	By default, the configuration flag receive.denyNonFastForwards is enabled in shared repositories, so
+	that you cannot force a non fast-forwarding push into it.
+
+	If you name a (possibly non-existent) directory at the end of the command line, the command is run
+	inside the directory (possibly after creating it).
+
 
 	<h2>reset</h2>
 	ワークツリーやインデックスを指定コミットの状態にする<br>
