@@ -25,6 +25,16 @@
 	--mixed インデックスの変更を取り消す<br>
 	--hard ワークツリーとインデックスを破棄して指定コミットの状態にする<br>
 	<h2>status</h2>
+	ワーキングツリーの状態を表示する<br>
+	git status [<options>..] [--] [<pathspec>...]<br>
+	<br>
+	--short 簡易表記で表示<br>
+	--branch ブランチとトラック情報を簡易表記で表示<br>
+	--porcelain スクリプトとかでパースしやすい形式で表示<br>
+	--untracked-files 未トラックのファイルも表示<br>
+	--ignore-submodules サブモジュールの変更を表示しない<br>
+	--ignored 無視ファイルも表示<br>
+	-z 改行をLF(0x0a)ではなくNUL(0x00)で表示する
 
 	<h2>grep</h2>
 	リポジトリに対して特定の語句が含まれているファイルを検索する<br>
