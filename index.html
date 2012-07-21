@@ -77,6 +77,18 @@
 	--ignored 無視ファイルも表示<br>
 	-z 改行をLF(0x0a)ではなくNUL(0x00)で表示する
 
+	<h2>diff</h2>
+	コミット同士や、コミットとワーキングツリーなどの差分を表示する<br>
+	git diff [options] [&ltcommit&gt] [--] [&ltpath&gt...]<br>
+	git diff [options] --chached [&ltcommit&gt] [--] [&ltpath&gt...]<br>
+	git diff [options] &ltcommit&gt &ltcommit&gt [--] [&ltpath&gt...]<br>
+	git diff [options] [--no-index] [--] &ltpath&gt &ltpath&gt<br>
+	比較する区間の指定方法の例<br>
+	&nbsp;&nbsp;git diff ワーキングツリーとインデックスの差分を表示<br>
+	&nbsp;&nbsp;git diff HEAD ワーキングツリーとHEADの差分を表示<br>
+	&nbsp;&nbsp;git diff commit1 commit2 ２つのコミットの差分を表示<br>
+	&nbsp;&nbsp;git diff file1 file2 ２つのファイルの差分を表示する<br>
+
 	<h2>grep</h2>
 	リポジトリに対して特定の語句が含まれているファイルを検索する<br>
 	git grep [&ltoptions&gt] [&ltkeyword&gt]<br>
