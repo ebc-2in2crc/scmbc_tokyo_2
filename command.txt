@@ -8,7 +8,7 @@ diff
 fetch
 grep @noboruhi
 init Daiki Hara
-log
+log @noboruhi
 merge
 mv
 pull
