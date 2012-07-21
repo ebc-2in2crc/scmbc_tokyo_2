@@ -13,8 +13,13 @@
 	git branch &lt;branchname&gt;<br/>
 	ブランチの作成。 &lt;branchname&gt;は作成するブランチ名<br/>
 	作成されたブランチは、現在作業中のブランチのHEADがコピーされる。<br/>
-	git branch &lt;branchname&gt; [&lt;start-point&gt;]<br/>
-	
+	git branch -d &lt;branchname&gt;<br/>
+	ローカル上のブランチを削除します。<br/>
+	リモートのブランチを削除するには git push :branchname として<br/>
+	ブランチ名の前に「:」をつける事で削除できます。<br/>
+	git branch (-m|-M|--move) &lt;oldname&gt; &lt;newname&gt;<br/>
+	ブランチ名を変更します。<br/>
+	引数で指定した[oldname]のブランチ名を[newname]へ変更します。<br/>
 	
 	<h2>init</h2>
 	
