@@ -107,6 +107,17 @@
 	-l / --files-with-matches / --name-only : マッチしたファイルのファイル名だけを表示します<br>
 	-L / --files-without-match : マッチしなかったファイル名だけを表示します<br>
 
+	<h2>pull</h2>
+	他のリポジトリまたはローカルのブランチから変更をフェッチしてマージする<br>
+	git fetch した後に git merge する略記コマンド<br>
+	git pull [options] [&lt;repository&gt; [&lt;refspec&gt;...]]<br>
+	<br>
+	マージに関係するオプション<br>
+	--ff first-forward 出来る場合はマージコミットを作成せずにポインタだけ更新します。これがデフォルトの動作です。
+	--no-ff first-forward 出来る場合でも必ずマージコミットを作成します。
+	--ff-only first-forward 出来る場合はポインタだけ更新します。first-forward できない場合は必ず失敗します。
+	--rebase git fetch した後に git rebase する略記コマンド<br>
+
 	<h2>tag</h2>
 	タグを作成、一覧表示、削除、検証する<br>
 	git tag -d &lt;tagname&gt;<br>
