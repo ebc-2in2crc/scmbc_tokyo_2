@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="ja">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -22,5 +22,23 @@
 	--mixed インデックスの変更を取り消す<br>
 	--hard ワークツリーとインデックスを破棄して指定コミットの状態にする<br>
 	<h2>status</h2>
+
+	<h2>grep</h2>
+	リポジトリに対して特定の語句が含まれているファイルを検索する<br>
+	git grep [&ltoptions&gt] [&ltkeyword&gt]<br>
+	<br>
+	-i / --ignore-case : 大文字小文字を区別せずマッチします<br>
+	-I : バイナリファイルを無視します<br>
+	-w / --word-regexp : 検索文字が単語としてマッチする時のみマッチするようになります。このオプションが指定されているとき a は abc にマッチしません<br>
+	-v / --invert-match : 実際にマッチした単語がない行も表示します<br>
+	-h / -H : マッチしたファイル名を行頭に表示するか否かの指定です。<br>
+	--full-name : ファイル名を表示する時、詳細なファイルパスを出力するようにします(デフォルトでは basename のみ)<br>
+	-E / --extended-regexp : 検索に POSIX の拡張正規表現を利用します<br>
+	-G / --basic-regexp : 検索に POSIX の標準正規表現を利用します<br>
+	-P / --perl-regexp : 検索に Perl の正規表現を利用します<br>
+	-F / --fixed-strings : 検索に正規表現を利用しません<br>
+	-n / --line-number : マッチしたファイル名の後ろにマッチした行数を表示します<br>
+	-l / --files-with-matches / --name-only : マッチしたファイルのファイル名だけを表示します<br>
+	-L / --files-without-match : マッチしなかったファイル名だけを表示します<br>
 </body>
 </html>
