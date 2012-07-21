@@ -6,7 +6,7 @@ clone
 commit
 diff
 fetch
-grep noborui
+grep noboruhi
 init
 log
 merge
